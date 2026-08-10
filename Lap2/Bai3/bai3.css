@@ -1,0 +1,710 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f1f3f8;
+
+    color: #333;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    width: 100%;
+
+    background-color: white;
+}
+
+
+/* =========================
+   TOP HEADER
+========================= */
+
+.top-header {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #2456a6;
+}
+
+
+.logo > i {
+
+    font-size: 38px;
+}
+
+
+.logo strong {
+
+    display: block;
+
+    font-size: 13px;
+}
+
+
+.logo small {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 10px;
+
+    color: #777;
+}
+
+
+/* =========================
+   HEADER ICON
+========================= */
+
+.header-icons {
+
+    display: flex;
+
+    gap: 18px;
+}
+
+
+.icon-box {
+
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    color: #2456a6;
+
+    background-color: #eef4ff;
+}
+
+
+.icon-box:hover {
+
+    background-color: #dce9ff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+    /*
+       Gradient 3 màu:
+       blue + lightblue + white
+    */
+    background: linear-gradient(
+        to right,
+        blue,
+        lightblue,
+        white
+    );
+}
+
+
+.navbar a {
+
+    color: #17478d;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    padding: 10px 15px;
+}
+
+
+/*
+    Đề yêu cầu:
+    Bình thường không gạch chân
+    Hover thì hiện gạch chân
+*/
+
+.navbar a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   POPUP
+========================= */
+
+.popup {
+
+    position: absolute;
+
+    top: 42px;
+
+    right: 0;
+
+    width: 250px;
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    z-index: 100;
+
+    display: none;
+}
+
+
+.popup h4 {
+
+    color: #2456a6;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+
+.popup p {
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+
+    color: #555;
+}
+
+
+/*
+    Hover USER
+*/
+
+.user-box:hover .user-popup {
+
+    display: block;
+}
+
+
+/*
+    Hover BELL
+*/
+
+.bell-box:hover .notification-popup {
+
+    display: block;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.container {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    margin: 25px auto;
+
+    background-color: white;
+
+    padding: 20px;
+
+    min-height: 1000px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.intro h2 {
+
+    color: #2456a6;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.intro p {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MEMBERS
+========================= */
+
+.members {
+
+    margin-bottom: 25px;
+}
+
+
+.members > h2 {
+
+    font-size: 15px;
+
+    color: #2456a6;
+
+    margin-bottom: 12px;
+}
+
+
+.member-list {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.member {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px;
+
+    background-color: #f5f8fd;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar {
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    /*
+       Gradient hình tròn
+       white + blue
+    */
+    background: radial-gradient(
+        circle,
+        white,
+        blue
+    );
+
+    padding: 3px;
+
+    flex-shrink: 0;
+}
+
+
+.avatar img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   MEMBER INFO
+========================= */
+
+.member-info h3 {
+
+    font-size: 13px;
+
+    color: #333;
+
+    margin-bottom: 5px;
+}
+
+
+.member-info p {
+
+    font-size: 11px;
+
+    color: #777;
+
+    margin-bottom: 3px;
+}
+
+
+.member-info small {
+
+    font-size: 10px;
+
+    color: #999;
+}
+
+
+/* =========================
+   POSTS
+========================= */
+
+.posts {
+
+    margin-top: 20px;
+}
+
+
+.section-title {
+
+    background-color: #4c8dd1;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    margin-bottom: 5px;
+}
+
+
+.section-title h2 {
+
+    font-size: 14px;
+}
+
+
+/* POST */
+
+.post {
+
+    display: flex;
+
+    gap: 15px;
+
+    padding: 13px 10px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.post-content {
+
+    flex: 1;
+}
+
+
+.post-content a {
+
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    /*
+       Tất cả link bỏ gạch chân
+    */
+    text-decoration: none;
+}
+
+
+.post-content a:hover {
+
+    /*
+       Hover thì hiện gạch chân
+    */
+    text-decoration: underline;
+
+    color: #2456a6;
+}
+
+
+.post-content p {
+
+    font-size: 11px;
+
+    color: #777;
+
+    margin: 6px 0;
+}
+
+
+.post-content small {
+
+    font-size: 9px;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   FIXED BANNER
+========================= */
+
+.left-banner,
+.right-banner {
+
+    position: fixed;
+
+    top: 250px;
+
+    width: 90px;
+
+    height: 110px;
+
+    background-color: #dce5f2;
+
+    border: 1px solid #c4d1e1;
+
+    z-index: 50;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: #526b88;
+
+    font-size: 10px;
+}
+
+
+.left-banner {
+
+    left: 15px;
+}
+
+
+.right-banner {
+
+    right: 15px;
+}
+
+
+.left-banner p,
+.right-banner p {
+
+    margin: 3px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    margin-top: 30px;
+
+    min-height: 100px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: #284a96;
+}
+
+
+footer p {
+
+    margin: 8px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .left-banner,
+    .right-banner {
+
+        display: none;
+    }
+
+    .container {
+
+        width: 90%;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .top-header {
+
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .navbar {
+
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 5px;
+    }
+
+
+    .navbar a {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 8px;
+    }
+
+
+    .container {
+
+        width: 95%;
+
+        padding: 12px;
+
+        margin: 10px auto;
+    }
+
+
+    .member-list {
+
+        flex-direction: column;
+    }
+
+
+    .post {
+
+        align-items: flex-start;
+    }
+
+
+    .popup {
+
+        position: fixed;
+
+        top: 80px;
+
+        right: 10px;
+
+        width: 220px;
+    }
+
+
+    .logo {
+
+        text-align: center;
+    }
+
+
+    .logo > i {
+
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Tài Khoản Mới</title>
+    <link rel="stylesheet" href="/Lap1/Bai9/2251052040-PhamHuuHung-Lap1-Bai9.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <div class="form-header">
+            <h2>TẠO TÀI KHOẢN MỚI</h2>
+            <p>Điền thông tin bên dưới để bắt đầu</p>
+        </div>
+        
+        
+        <form action="#" method="POST" class="register-form">
+            
+            
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" class="form-control" placeholder="Nguyễn Văn A" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="ban@example.com" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" class="form-control" placeholder="Tối thiểu 8 ký tự" minlength="8" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" class="form-control" placeholder="09xxxxxxxx" pattern="[0-9]{10,11}">
+            </div>
+
+            <button type="submit" class="btn-submit">Đăng Ký</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>

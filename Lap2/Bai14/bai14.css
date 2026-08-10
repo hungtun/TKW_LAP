@@ -1,0 +1,504 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #555;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+    background-color: #3f86c9;
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: white;
+}
+
+
+.camera-icon {
+
+    font-size: 50px;
+}
+
+
+.logo-text h1 {
+
+    font-size: 24px;
+
+    letter-spacing: 1px;
+}
+
+
+.logo-text p {
+
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    color: #e7f3ff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0;
+
+    background-color: #5b9bd5;
+
+    padding-left: 20px;
+}
+
+
+.navbar a {
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 22px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+
+/*
+    Trang chủ luôn có màu khác
+*/
+
+.navbar a.active {
+
+    background-color: #3477b5;
+}
+
+
+/*
+    Hover menu
+*/
+
+.navbar a:hover {
+
+    color: #ffe082;
+
+    background-color: #3477b5;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 25px 20px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+}
+
+
+/* =========================
+   ARTICLES
+========================= */
+
+.articles {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/*
+    Toàn bộ article là một vùng hover
+*/
+
+.article {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+/*
+    Khi hover:
+    cả khối đổi màu nền
+*/
+
+.article:hover {
+
+    background-color: #f0f7ff;
+}
+
+
+/* =========================
+   ARTICLE IMAGE
+========================= */
+
+.article img {
+
+    width: 180px;
+
+    height: 120px;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   ARTICLE CONTENT
+========================= */
+
+.article-content {
+
+    padding-top: 5px;
+}
+
+
+.article-content h2 {
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    color: #555;
+
+    margin-bottom: 5px;
+}
+
+
+.article-content .category {
+
+    color: #e58b8b;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+}
+
+
+.article-content p {
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #777;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+
+    border-left: 1px solid #ddd;
+
+    padding-left: 25px;
+}
+
+
+/* =========================
+   FEATURED
+========================= */
+
+.featured h2,
+.contact h2 {
+
+    color: #e58b8b;
+
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+
+.featured ul {
+
+    list-style: none;
+}
+
+
+.featured li {
+
+    padding: 9px 10px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 13px;
+
+    color: #666;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/*
+    Hover danh sách ảnh nổi bật:
+    chữ + nền đều đổi màu
+*/
+
+.featured li:hover {
+
+    color: white;
+
+    background-color: #5b9bd5;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+    margin-top: 30px;
+}
+
+
+.contact p {
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #777;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color: #3f86c9;
+
+    color: white;
+
+    padding: 18px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+/*
+    TABLET
+*/
+
+@media (max-width: 768px) {
+
+    .container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .sidebar {
+
+        border-left: none;
+
+        border-top: 1px solid #ddd;
+
+        padding-left: 0;
+
+        padding-top: 20px;
+    }
+
+
+    .article img {
+
+        width: 160px;
+
+        height: 105px;
+    }
+
+}
+
+
+/*
+    MOBILE
+*/
+
+@media (max-width: 600px) {
+
+    .header {
+
+        height: auto;
+
+        padding: 20px;
+
+    }
+
+
+    .logo {
+
+        margin: auto;
+
+    }
+
+
+    .logo-text h1 {
+
+        font-size: 18px;
+
+    }
+
+
+    .logo-text p {
+
+        font-size: 10px;
+
+    }
+
+
+    /* Menu chuyển thành cột */
+
+    .navbar {
+
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 0;
+
+    }
+
+
+    .navbar a {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    /* Bài viết chuyển thành dọc */
+
+    .article {
+
+        flex-direction: column;
+
+        padding: 10px;
+
+    }
+
+
+    .article img {
+
+        width: 100%;
+
+        height: 180px;
+
+    }
+
+
+    .article-content {
+
+        padding: 5px;
+
+    }
+
+
+    .container {
+
+        padding: 15px 10px;
+
+    }
+
+
+    .sidebar {
+
+        margin-top: 10px;
+
+    }
+
+}

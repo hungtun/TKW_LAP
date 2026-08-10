@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lịch làm việc</title>
+
+    <link rel="stylesheet" href="bai2.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-solid fa-calendar-days"></i>
+        </div>
+
+        <div class="title">
+            <h1>LỊCH LÀM VIỆC</h1>
+            <p>Quản lý công việc cá nhân</p>
+        </div>
+
+    </header>
+
+
+    <!-- MENU -->
+    <nav class="menu">
+
+        <button class="active">
+            Lịch cá nhân
+        </button>
+
+        <button>
+            Lịch công việc
+        </button>
+
+        <button>
+            Lịch họp
+        </button>
+
+    </nav>
+
+
+    <!-- CONTENT -->
+    <main class="container">
+
+        <!-- SEARCH -->
+        <div class="search-area">
+
+            <input
+                type="text"
+                placeholder="Nhập nội dung công việc..."
+            >
+
+            <input
+                type="date"
+            >
+
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Tìm
+            </button>
+
+        </div>
+
+
+        <!-- WORK LIST -->
+        <section class="work-list">
+
+            <!-- WORK 1 -->
+            <div class="work-item">
+
+                <div class="work-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="work-info">
+
+                    <h3>
+                        Tham gia cuộc họp nhóm phát triển website
+                    </h3>
+
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        12/08/2026
+                    </p>
+
+                </div>
+
+                <span class="status done">
+                    Đã làm
+                </span>
+
+                <button class="detail-btn">
+                    Chi tiết
+                </button>
+
+            </div>
+
+
+            <!-- WORK 2 -->
+            <div class="work-item">
+
+                <div class="work-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="work-info">
+
+                    <h3>
+                        Ôn tập HTML và CSS
+                    </h3>
+
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        13/08/2026
+                    </p>
+
+                </div>
+
+                <span class="status pending">
+                    Chưa làm
+                </span>
+
+                <button class="detail-btn">
+                    Chi tiết
+                </button>
+
+            </div>
+
+
+            <!-- WORK 3 -->
+            <div class="work-item">
+
+                <div class="work-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="work-info">
+
+                    <h3>
+                        Hoàn thành bài tập thực hành HTML
+                    </h3>
+
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        14/08/2026
+                    </p>
+
+                </div>
+
+                <span class="status pending">
+                    Chưa làm
+                </span>
+
+                <button class="detail-btn">
+                    Chi tiết
+                </button>
+
+            </div>
+
+
+            <!-- WORK 4 -->
+            <div class="work-item">
+
+                <div class="work-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="work-info">
+
+                    <h3>
+                        Học CSS Flexbox
+                    </h3>
+
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        15/08/2026
+                    </p>
+
+                </div>
+
+                <span class="status pending">
+                    Chưa làm
+                </span>
+
+                <button class="detail-btn">
+                    Chi tiết
+                </button>
+
+            </div>
+
+
+            <!-- WORK 5 -->
+            <div class="work-item">
+
+                <div class="work-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="work-info">
+
+                    <h3>
+                        Làm bài tập CSS Responsive
+                    </h3>
+
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        16/08/2026
+                    </p>
+
+                </div>
+
+                <span class="status pending">
+                    Chưa làm
+                </span>
+
+                <button class="detail-btn">
+                    Chi tiết
+                </button>
+
+            </div>
+
+
+            <!-- WORK 6 -->
+            <div class="work-item">
+
+                <div class="work-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="work-info">
+
+                    <h3>
+                        Hoàn thành báo cáo
+                    </h3>
+
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        17/08/2026
+                    </p>
+
+                </div>
+
+                <span class="status pending">
+                    Chưa làm
+                </span>
+
+                <button class="detail-btn">
+                    Chi tiết
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <p class="note">
+            Hãy hoàn thành các công việc đúng thời hạn để đạt hiệu quả tốt nhất.
+        </p>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="moving-text">
+            Chúc bạn một ngày làm việc hiệu quả! ★ Hoàn thành công việc đúng thời hạn ★
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

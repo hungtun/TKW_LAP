@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu môn Thiết kế Web</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    body {
+        background-color: beige;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        margin: 20px;
+    }
+
+    .info-table {
+        margin: 0 30px;
+    }
+
+    .info-table th,
+    .info-table td {
+        text-align: left;
+        padding: 10px;
+    }
+    .content-table{
+        margin: 0 20px;
+    }
+    .content-table, .content-table th, .content-table td, .content-table tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .footer-table {
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    .content-table tr:nth-child(-n+2) {
+    background-color: bisque;
+}
+
+</style>
+
+<body>
+
+    <div class="container">
+
+        <h1>GIỚI THIỆU MÔN THIẾT KẾ WEB</h1>
+
+        <h2>THÔNG TIN MÔN HỌC</h2>
+
+        <table class="info-table">
+            <tr>
+                <th>Tên môn học</th>
+                <td>THIẾT KẾ WEB</td>
+            </tr>
+
+            <tr>
+                <th>Mã môn học</th>
+                <td>ITEC1406</td>
+            </tr>
+
+            <tr>
+                <th>Khoa phụ trách</th>
+                <td>CNTT</td>
+            </tr>
+
+            <tr>
+                <th>Số tín chỉ</th>
+                <td>3TC (2LT, 1TH)</td>
+            </tr>
+        </table>
+
+        <h2>NỘI DUNG MÔN HỌC</h2>
+
+        <table class="content-table">
+
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">Chương</th>
+                <th colspan="3">Số tiết</th>
+                <th rowspan="2">Tài liệu tham khảo</th>
+            </tr>
+
+            <tr>
+                <th>TC<sup>(1)</sup></th>
+                <th>LT<sup>(2)</sup></th>
+                <th>TH<sup>(3)</sup></th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Tổng quan Internet và công nghệ Web</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>
+                    <a href="https://www.tutorialspoint.com/internet_technologies/www_overview.htm" target="_blank">
+                        WWW Overview
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>HTML</td>
+                <td>16</td>
+                <td>8</td>
+                <td>8</td>
+                <td>
+                    <a href="https://www.w3schools.com/html/" target="_blank">
+                        https://www.w3schools.com/html/
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>CSS</td>
+                <td>14</td>
+                <td>7</td>
+                <td>7</td>
+                <td>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+                        https://www.w3schools.com/css/default.asp
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Javascript</td>
+                <td>18</td>
+                <td>8</td>
+                <td>10</td>
+                <td>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                        https://www.w3schools.com/js/default.asp
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>jQuery</td>
+                <td>10</td>
+                <td>5</td>
+                <td>5</td>
+                <td>
+                    <a href="https://www.w3schools.com/jquery/default.asp" target="_blank">
+                        https://www.w3schools.com/jquery/default.asp
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6" class="footer-table">
+                    DHTHANH @ 2023
+                </td>
+            </tr>
+
+        </table>
+
+        <ul>
+            <li>(1) TC: Tín chỉ</li>
+            <li>(2) LT: Lý thuyết</li>
+            <li>(3) TH: Thực hành</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

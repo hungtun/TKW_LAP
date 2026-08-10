@@ -1,0 +1,465 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    /*
+        Đề yêu cầu font Tahoma
+    */
+    font-family: Tahoma, sans-serif;
+
+    background-color: #eef3f8;
+
+    color: #333;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+    width: 100%;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background-color: #f5f9fd;
+}
+
+
+.logo {
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dbe8f5;
+
+    border-radius: 10px;
+
+    color: #527da8;
+
+    font-size: 25px;
+}
+
+
+.title {
+    text-align: center;
+}
+
+
+.title h1 {
+
+    font-size: 22px;
+
+    color: #527da8;
+
+    margin-bottom: 5px;
+}
+
+
+.title p {
+
+    font-size: 13px;
+
+    color: #888;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    background-color: #dce8f4;
+}
+
+
+.menu button {
+
+    border: none;
+
+    padding: 9px 20px;
+
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    color: #527da8;
+
+    cursor: pointer;
+
+    font-family: Tahoma;
+}
+
+
+.menu button:hover {
+
+    background-color: #c4d8eb;
+}
+
+
+.menu .active {
+
+    background-color: #527da8;
+
+    color: white;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 25px auto;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-area {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.search-area input {
+
+    padding: 10px;
+
+    border: 1px solid #cbd7e3;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-family: Tahoma;
+}
+
+
+.search-area input:first-child {
+
+    flex: 1;
+}
+
+
+.search-area input:focus {
+
+    border-color: #527da8;
+}
+
+
+.search-btn {
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #527da8;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: Tahoma;
+}
+
+
+.search-btn:hover {
+
+    background-color: #3f6489;
+}
+
+
+/* =========================
+   WORK LIST
+========================= */
+
+.work-list {
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.work-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 5px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.work-item:last-child {
+
+    border-bottom: none;
+}
+
+
+/* Icon */
+
+.work-icon {
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #527da8;
+
+    font-size: 17px;
+}
+
+
+/* Thông tin */
+
+.work-info {
+
+    flex: 1;
+}
+
+
+.work-info h3 {
+
+    font-size: 14px;
+
+    font-weight: normal;
+
+    margin-bottom: 7px;
+
+    color: #444;
+}
+
+
+.work-info p {
+
+    font-size: 11px;
+
+    color: #999;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+
+    padding: 5px 10px;
+
+    border-radius: 12px;
+
+    font-size: 11px;
+
+    color: white;
+}
+
+
+.status.done {
+
+    background-color: #e47761;
+}
+
+
+.status.pending {
+
+    background-color: #e47761;
+}
+
+
+/* =========================
+   DETAIL BUTTON
+========================= */
+
+.detail-btn {
+
+    border: none;
+
+    background-color: #4d91d1;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-family: Tahoma;
+
+    font-size: 11px;
+}
+
+
+.detail-btn:hover {
+
+    background-color: #286ba7;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.note {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    height: 50px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #dce8f4;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.moving-text {
+
+    /*
+        Đẩy chữ ra ngoài bên trái
+    */
+    transform: translateX(-100%);
+
+    /*
+        Chạy animation liên tục
+    */
+    animation: moveRight 15s linear infinite;
+
+    color: #527da8;
+
+    font-size: 13px;
+}
+
+
+/*
+    Chạy từ trái -> phải
+*/
+
+@keyframes moveRight {
+
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .search-area {
+
+        flex-direction: column;
+    }
+
+
+    .work-item {
+
+        flex-wrap: wrap;
+    }
+
+
+    .status {
+
+        margin-left: 50px;
+    }
+
+
+    .detail-btn {
+
+        margin-left: auto;
+    }
+
+}

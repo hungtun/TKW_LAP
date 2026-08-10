@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background: linear-gradient(135deg, #4A70D3, #15A5A4); 
+}
+
+.form-wrapper {
+    background-color: #ffffff;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-header h2 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-header p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+label:has(+ .form-control[required])::after {
+    content: " *";
+    color: #e74c3c; 
+}
+
+.form-control {
+    padding: 12px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease; 
+}
+
+.form-control:focus {
+    border-color: #3498db; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); 
+}
+
+.form-control:not(:placeholder-shown):valid {
+    border-color: #2ecc71; 
+}
+
+.form-control:not(:placeholder-shown):invalid {
+    border-color: #e74c3c; 
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+    background-image: linear-gradient(to right, #3498db 0%, #1abc9c 51%, #3498db 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    
+    background-position: right center;
+}
+
+.btn-submit:active {
+    transform: scale(0.98); 
+}
