@@ -5,555 +5,367 @@
 }
 
 body {
-
-    font-family: Arial, sans-serif;
-
-    background-color: #f1f3f8;
-
+    font-family: Tahoma, sans-serif;
+    background-color: #f0f4f8;
     color: #333;
+    min-height: 100vh;
 }
 
-header {
-
-    width: 100%;
-
-    background-color: white;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.top-header {
+a:hover {
+    text-decoration: underline;
+}
 
-    max-width: 1000px;
-
-    margin: auto;
-
-    height: 80px;
-
+.navbar {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
-    padding: 0 20px;
+    padding: 0 24px;
+    min-height: 44px;
+    background: linear-gradient(to right, blue, lightblue, white);
 }
 
-.logo {
-
+.nav-menu {
+    list-style: none;
     display: flex;
-
     align-items: center;
-
-    gap: 12px;
-
-    color: #2456a6;
+    gap: 4px;
 }
 
-.logo > i {
-
-    font-size: 38px;
-}
-
-.logo strong {
-
+.nav-menu a {
     display: block;
-
-    font-size: 13px;
+    padding: 10px 16px;
+    color: #1a3a6b;
+    font-size: 14px;
 }
 
-.logo small {
-
-    display: block;
-
-    margin-top: 4px;
-
-    font-size: 10px;
-
-    color: #777;
+.nav-menu a.active {
+    background-color: #1e5aa8;
+    color: #fff;
 }
 
-.header-icons {
+.nav-menu a.active:hover {
+    text-decoration: none;
+}
 
+.nav-icons {
     display: flex;
-
+    align-items: center;
     gap: 18px;
 }
 
 .icon-box {
-
     position: relative;
-
-    width: 32px;
-    height: 32px;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
     cursor: pointer;
-
-    color: #2456a6;
-
-    background-color: #eef4ff;
-}
-
-.icon-box:hover {
-
-    background-color: #dce9ff;
-}
-
-.navbar {
-
-    height: 40px;
-
     display: flex;
-
-    justify-content: center;
-
     align-items: center;
-
-    gap: 40px;
-
-    
-    background: linear-gradient(
-        to right,
-        blue,
-        lightblue,
-        white
-    );
+    justify-content: center;
 }
 
-.navbar a {
-
-    color: #17478d;
-
-    text-decoration: none;
-
-    font-size: 13px;
-
-    padding: 10px 15px;
+.bell-box {
+    color: #e53935;
+    font-size: 20px;
 }
 
-.navbar a:hover {
-
-    text-decoration: underline;
+.user-box {
+    color: #1e5aa8;
+    font-size: 26px;
 }
 
 .popup {
-
     position: absolute;
-
-    top: 42px;
-
+    top: 36px;
     right: 0;
-
-    width: 250px;
-
-    background-color: white;
-
-    padding: 15px;
-
-    border-radius: 5px;
-
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
-    z-index: 100;
-
+    width: 260px;
+    padding: 14px;
+    background-color: #6b6b2e;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 200;
     display: none;
-}
-
-.popup h4 {
-
-    color: #2456a6;
-
-    margin-bottom: 10px;
-
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.6;
 }
 
 .popup p {
-
-    font-size: 12px;
-
-    margin-bottom: 7px;
-
-    color: #555;
+    margin-bottom: 6px;
 }
 
+.user-popup img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+}
+
+.bell-box:hover .notification-popup,
 .user-box:hover .user-popup {
-
     display: block;
 }
 
-.bell-box:hover .notification-popup {
-
-    display: block;
+.wrapper {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    padding: 16px 20px 24px;
 }
 
-.container {
-
-    width: 100%;
-
-    max-width: 750px;
-
-    margin: 25px auto;
-
-    background-color: white;
-
-    padding: 20px;
-
-    min-height: 1000px;
-}
-
-.intro {
-
-    padding: 15px;
-
-    margin-bottom: 20px;
-
-    border-bottom: 1px solid #ddd;
-}
-
-.intro h2 {
-
-    color: #2456a6;
-
-    font-size: 18px;
-
-    margin-bottom: 8px;
-}
-
-.intro p {
-
-    color: #777;
-
-    font-size: 13px;
-}
-
-.members {
-
-    margin-bottom: 25px;
-}
-
-.members > h2 {
-
-    font-size: 15px;
-
-    color: #2456a6;
-
-    margin-bottom: 12px;
-}
-
-.member-list {
-
+.brand {
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
     gap: 20px;
 }
 
-.member {
-
-    flex: 1;
-
+.logo {
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
-    padding: 10px;
-
-    background-color: #f5f8fd;
-
-    border-radius: 5px;
+    color: #1e5aa8;
 }
 
-.avatar {
-
-    width: 50px;
-    height: 50px;
-
-    border-radius: 50%;
-
-    
-    background: radial-gradient(
-        circle,
-        white,
-        blue
-    );
-
-    padding: 3px;
-
-    flex-shrink: 0;
+.logo > i {
+    font-size: 48px;
 }
 
-.avatar img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 50%;
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35;
 }
 
-.member-info h3 {
-
+.logo-text strong {
     font-size: 13px;
-
-    color: #333;
-
-    margin-bottom: 5px;
 }
 
-.member-info p {
-
-    font-size: 11px;
-
-    color: #777;
-
-    margin-bottom: 3px;
+.logo-text span {
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.member-info small {
-
-    font-size: 10px;
-
-    color: #999;
+.logo-text small {
+    font-size: 9px;
+    color: #5a7aad;
+    margin-top: 2px;
 }
 
-.posts {
+.brand h1 {
+    color: #1e5aa8;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
 
-    margin-top: 20px;
+.forum {
+    margin-bottom: 20px;
 }
 
 .section-title {
-
-    background-color: #4c8dd1;
-
-    color: white;
-
-    padding: 8px 15px;
-
-    margin-bottom: 5px;
+    background-color: #2b6cb0;
+    padding: 10px 16px;
 }
 
 .section-title h2 {
-
-    font-size: 14px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .post {
-
     display: flex;
-
-    gap: 15px;
-
-    padding: 13px 10px;
-
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 8px;
     border-bottom: 1px solid #ddd;
 }
 
-.post-content {
+.post:last-child {
+    border-bottom: none;
+}
 
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    padding: 4px;
+    background: radial-gradient(circle, white, blue);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.post-body {
     flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
 }
 
-.post-content a {
+.post-info {
+    flex: 1;
+    min-width: 0;
+}
 
-    color: #333;
-
-    font-size: 13px;
-
+.post-info a {
+    color: #1e5aa8;
+    font-size: 14px;
     font-weight: bold;
-
-    
-    text-decoration: none;
 }
 
-.post-content a:hover {
-
-    
-    text-decoration: underline;
-
-    color: #2456a6;
+.post-info p {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #888;
 }
 
-.post-content p {
-
+.post-meta {
+    flex-shrink: 0;
+    max-width: 260px;
+    text-align: right;
     font-size: 11px;
-
-    color: #777;
-
-    margin: 6px 0;
+    color: #888;
+    line-height: 1.5;
 }
 
-.post-content small {
-
-    font-size: 9px;
-
-    color: #aaa;
+.post-meta a {
+    color: #1e5aa8;
+    font-weight: bold;
 }
 
 .left-banner,
 .right-banner {
-
     position: fixed;
-
-    top: 250px;
-
-    width: 90px;
-
-    height: 110px;
-
-    background-color: #dce5f2;
-
-    border: 1px solid #c4d1e1;
-
-    z-index: 50;
-
+    top: 220px;
+    width: 100px;
+    height: 120px;
+    background-color: #d6e4f0;
+    border: 1px solid #b0c4d8;
+    border-radius: 4px;
+    z-index: 100;
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
     text-align: center;
-
-    color: #526b88;
-
-    font-size: 10px;
+    color: #3a5a7a;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 .left-banner {
-
-    left: 15px;
+    left: 18px;
 }
 
 .right-banner {
-
-    right: 15px;
-}
-
-.left-banner p,
-.right-banner p {
-
-    margin: 3px;
+    right: 18px;
 }
 
 footer {
-
-    margin-top: 30px;
-
-    min-height: 100px;
-
-    padding: 25px;
-
-    text-align: center;
-
-    color: white;
-
-    background-color: #284a96;
+    background-color: #1e4d8c;
+    color: #fff;
+    padding: 24px 40px;
+    font-size: 13px;
+    line-height: 1.8;
 }
 
-footer p {
+footer a {
+    color: #fff;
+}
 
-    margin: 8px;
+footer a:hover {
+    text-decoration: underline;
+}
 
-    font-size: 12px;
+@media (max-width: 1100px) {
+    .left-banner,
+    .right-banner {
+        display: none;
+    }
 }
 
 @media (max-width: 900px) {
-
-    .left-banner,
-    .right-banner {
-
-        display: none;
+    .post-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
     }
 
-    .container {
-
-        width: 90%;
+    .post-meta {
+        max-width: 100%;
+        text-align: left;
     }
-
 }
 
-@media (max-width: 600px) {
-
-    .top-header {
-
-        height: auto;
-
-        padding: 15px;
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
+@media (max-width: 700px) {
     .navbar {
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        gap: 8px;
+    }
 
-        height: auto;
-
-        flex-direction: column;
-
+    .nav-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: calc(100% - 80px);
         gap: 0;
-
-        padding: 5px;
     }
 
-    .navbar a {
-
-        width: 100%;
-
+    .nav-menu a {
         text-align: center;
-
-        padding: 8px;
+        padding: 8px 10px;
+        font-size: 13px;
     }
 
-    .container {
-
-        width: 95%;
-
-        padding: 12px;
-
-        margin: 10px auto;
-    }
-
-    .member-list {
-
+    .brand {
         flex-direction: column;
-    }
-
-    .post {
-
-        align-items: flex-start;
-    }
-
-    .popup {
-
-        position: fixed;
-
-        top: 80px;
-
-        right: 10px;
-
-        width: 220px;
+        text-align: center;
     }
 
     .logo {
-
-        text-align: center;
+        justify-content: center;
     }
 
-    .logo > i {
-
-        font-size: 30px;
+    .brand h1 {
+        font-size: 22px;
     }
 
+    .wrapper {
+        margin: 10px;
+        padding: 12px;
+        border: none;
+    }
+
+    .section-title h2 {
+        font-size: 14px;
+    }
+
+    .post-info a {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 20px 16px;
+        font-size: 12px;
+    }
+
+    .popup {
+        width: 220px;
+        right: -10px;
+    }
 }

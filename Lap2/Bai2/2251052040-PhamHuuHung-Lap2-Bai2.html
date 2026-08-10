@@ -4,270 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Lịch làm việc</title>
-
     <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap2-Bai2.css">
-
-    
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    
-    <header class="header">
+    <aside class="side-banner left-banner">
+        <p>LIÊN HỆ</p>
+        <p>QUẢNG CÁO</p>
+    </aside>
 
-        <div class="logo">
-            <i class="fa-solid fa-calendar-days"></i>
-        </div>
+    <aside class="side-banner right-banner">
+        <p>LIÊN HỆ</p>
+        <p>QUẢNG CÁO</p>
+    </aside>
 
-        <div class="title">
+    <div class="page">
+
+        <header class="header">
+            <div class="header-icon calendar-icon">
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
             <h1>LỊCH LÀM VIỆC</h1>
-            <p>Quản lý công việc cá nhân</p>
-        </div>
 
-    </header>
+            <div class="header-icon user-icon">
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+        </header>
 
-    
-    <nav class="menu">
+        <nav class="menu">
+            <button class="active" type="button">Lịch cá nhân</button>
+            <button type="button">Lịch tổ chức</button>
+            <button type="button">Phản hồi</button>
+        </nav>
 
-        <button class="active">
-            Lịch cá nhân
-        </button>
+        <form class="add-form">
+            <input type="text" placeholder="Nội dung công việc" name="content">
+            <input type="text" placeholder="Ngày diễn ra (dd/mm/yyyy)" name="date">
+            <button type="button" class="btn-add">Thêm</button>
+        </form>
 
-        <button>
-            Lịch công việc
-        </button>
-
-        <button>
-            Lịch họp
-        </button>
-
-    </nav>
-
-    
-    <main class="container">
-
-        
-        <div class="search-area">
-
-            <input
-                type="text"
-                placeholder="Nhập nội dung công việc..."
-            >
-
-            <input
-                type="date"
-            >
-
-            <button class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Tìm
-            </button>
-
-        </div>
-
-        
         <section class="work-list">
 
-            
             <div class="work-item">
-
-                <div class="work-icon">
-                    <i class="fa-solid fa-file-lines"></i>
-                </div>
-
-                <div class="work-info">
-
-                    <h3>
-                        Tham gia cuộc họp nhóm phát triển website
-                    </h3>
-
-                    <p>
-                        <i class="fa-regular fa-calendar"></i>
-                        12/08/2026
-                    </p>
-
-                </div>
-
-                <span class="status done">
-                    Đã làm
-                </span>
-
-                <button class="detail-btn">
-                    Chi tiết
-                </button>
-
+                <i class="fa-solid fa-calendar-days work-icon"></i>
+                <p class="work-content">Tham gia chương trình "Hiến máu tình nguyện"</p>
+                <span class="work-date">10/10/2017</span>
+                <button type="button" class="btn-delete">Xóa</button>
+                <button type="button" class="btn-update">Cập nhật</button>
             </div>
 
-            
             <div class="work-item">
-
-                <div class="work-icon">
-                    <i class="fa-solid fa-file-lines"></i>
-                </div>
-
-                <div class="work-info">
-
-                    <h3>
-                        Ôn tập HTML và CSS
-                    </h3>
-
-                    <p>
-                        <i class="fa-regular fa-calendar"></i>
-                        13/08/2026
-                    </p>
-
-                </div>
-
-                <span class="status pending">
-                    Chưa làm
-                </span>
-
-                <button class="detail-btn">
-                    Chi tiết
-                </button>
-
+                <i class="fa-solid fa-calendar-days work-icon"></i>
+                <p class="work-content">Ôn thi học kỳ II</p>
+                <span class="work-date">12/12/2017</span>
+                <button type="button" class="btn-delete">Xóa</button>
+                <button type="button" class="btn-update">Cập nhật</button>
             </div>
 
-            
             <div class="work-item">
-
-                <div class="work-icon">
-                    <i class="fa-solid fa-file-lines"></i>
-                </div>
-
-                <div class="work-info">
-
-                    <h3>
-                        Hoàn thành bài tập thực hành HTML
-                    </h3>
-
-                    <p>
-                        <i class="fa-regular fa-calendar"></i>
-                        14/08/2026
-                    </p>
-
-                </div>
-
-                <span class="status pending">
-                    Chưa làm
-                </span>
-
-                <button class="detail-btn">
-                    Chi tiết
-                </button>
-
+                <i class="fa-solid fa-calendar-days work-icon"></i>
+                <p class="work-content">Tham gia báo cáo chuyên đề môn Ứng dụng Web</p>
+                <span class="work-date">09/09/2017</span>
+                <button type="button" class="btn-delete">Xóa</button>
+                <button type="button" class="btn-update">Cập nhật</button>
             </div>
 
-            
             <div class="work-item">
-
-                <div class="work-icon">
-                    <i class="fa-solid fa-file-lines"></i>
-                </div>
-
-                <div class="work-info">
-
-                    <h3>
-                        Học CSS Flexbox
-                    </h3>
-
-                    <p>
-                        <i class="fa-regular fa-calendar"></i>
-                        15/08/2026
-                    </p>
-
-                </div>
-
-                <span class="status pending">
-                    Chưa làm
-                </span>
-
-                <button class="detail-btn">
-                    Chi tiết
-                </button>
-
+                <i class="fa-solid fa-calendar-days work-icon"></i>
+                <p class="work-content">Tham gia chương trình "Mùa hè Xanh"</p>
+                <span class="work-date">08/08/2017</span>
+                <button type="button" class="btn-delete">Xóa</button>
+                <button type="button" class="btn-update">Cập nhật</button>
             </div>
 
-            
             <div class="work-item">
-
-                <div class="work-icon">
-                    <i class="fa-solid fa-file-lines"></i>
-                </div>
-
-                <div class="work-info">
-
-                    <h3>
-                        Làm bài tập CSS Responsive
-                    </h3>
-
-                    <p>
-                        <i class="fa-regular fa-calendar"></i>
-                        16/08/2026
-                    </p>
-
-                </div>
-
-                <span class="status pending">
-                    Chưa làm
-                </span>
-
-                <button class="detail-btn">
-                    Chi tiết
-                </button>
-
+                <i class="fa-solid fa-calendar-days work-icon"></i>
+                <p class="work-content">Tham gia hội thảo việc làm Công nghệ thông tin</p>
+                <span class="work-date">08/09/2017</span>
+                <button type="button" class="btn-delete">Xóa</button>
+                <button type="button" class="btn-update">Cập nhật</button>
             </div>
 
-            
             <div class="work-item">
-
-                <div class="work-icon">
-                    <i class="fa-solid fa-file-lines"></i>
-                </div>
-
-                <div class="work-info">
-
-                    <h3>
-                        Hoàn thành báo cáo
-                    </h3>
-
-                    <p>
-                        <i class="fa-regular fa-calendar"></i>
-                        17/08/2026
-                    </p>
-
-                </div>
-
-                <span class="status pending">
-                    Chưa làm
-                </span>
-
-                <button class="detail-btn">
-                    Chi tiết
-                </button>
-
+                <i class="fa-solid fa-calendar-days work-icon"></i>
+                <p class="work-content">Hội thảo: Định hướng nghề nghiệp ngành CNTT</p>
+                <span class="work-date">25/11/2017</span>
+                <button type="button" class="btn-delete">Xóa</button>
+                <button type="button" class="btn-update">Cập nhật</button>
             </div>
 
         </section>
 
-        <p class="note">
-            Hãy hoàn thành các công việc đúng thời hạn để đạt hiệu quả tốt nhất.
-        </p>
+        <footer>
+            <div class="moving-text">
+                Thành công là một giáo viên tồi. Nó dụ dỗ người thông minh nghĩ rằng họ chẳng bao giờ thất bại - Bill Gates
+            </div>
+        </footer>
 
-    </main>
-
-    
-    <footer>
-
-        <div class="moving-text">
-            Chúc bạn một ngày làm việc hiệu quả! ★ Hoàn thành công việc đúng thời hạn ★
-        </div>
-
-    </footer>
+    </div>
 
 </body>
 
