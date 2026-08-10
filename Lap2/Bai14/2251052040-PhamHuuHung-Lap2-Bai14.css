@@ -1,17 +1,8 @@
-/* =========================
-   RESET
-========================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* =========================
-   BODY
-========================= */
 
 body {
     font-family: Arial, sans-serif;
@@ -20,11 +11,6 @@ body {
 
     color: #555;
 }
-
-
-/* =========================
-   HEADER
-========================= */
 
 .header {
 
@@ -39,7 +25,6 @@ body {
     padding: 0 30px;
 }
 
-
 .logo {
 
     display: flex;
@@ -51,12 +36,10 @@ body {
     color: white;
 }
 
-
 .camera-icon {
 
     font-size: 50px;
 }
-
 
 .logo-text h1 {
 
@@ -64,7 +47,6 @@ body {
 
     letter-spacing: 1px;
 }
-
 
 .logo-text p {
 
@@ -74,11 +56,6 @@ body {
 
     color: #e7f3ff;
 }
-
-
-/* =========================
-   NAVBAR
-========================= */
 
 .navbar {
 
@@ -94,7 +71,6 @@ body {
 
     padding-left: 20px;
 }
-
 
 .navbar a {
 
@@ -115,20 +91,10 @@ body {
     transition: 0.3s;
 }
 
-
-/*
-    Trang chủ luôn có màu khác
-*/
-
 .navbar a.active {
 
     background-color: #3477b5;
 }
-
-
-/*
-    Hover menu
-*/
 
 .navbar a:hover {
 
@@ -136,11 +102,6 @@ body {
 
     background-color: #3477b5;
 }
-
-
-/* =========================
-   CONTAINER
-========================= */
 
 .container {
 
@@ -157,11 +118,6 @@ body {
     gap: 30px;
 }
 
-
-/* =========================
-   ARTICLES
-========================= */
-
 .articles {
 
     display: flex;
@@ -170,11 +126,6 @@ body {
 
     gap: 15px;
 }
-
-
-/*
-    Toàn bộ article là một vùng hover
-*/
 
 .article {
 
@@ -193,21 +144,10 @@ body {
         transform 0.2s ease;
 }
 
-
-/*
-    Khi hover:
-    cả khối đổi màu nền
-*/
-
 .article:hover {
 
     background-color: #f0f7ff;
 }
-
-
-/* =========================
-   ARTICLE IMAGE
-========================= */
 
 .article img {
 
@@ -220,16 +160,10 @@ body {
     flex-shrink: 0;
 }
 
-
-/* =========================
-   ARTICLE CONTENT
-========================= */
-
 .article-content {
 
     padding-top: 5px;
 }
-
 
 .article-content h2 {
 
@@ -242,7 +176,6 @@ body {
     margin-bottom: 5px;
 }
 
-
 .article-content .category {
 
     color: #e58b8b;
@@ -251,7 +184,6 @@ body {
 
     margin-bottom: 8px;
 }
-
 
 .article-content p {
 
@@ -262,22 +194,12 @@ body {
     color: #777;
 }
 
-
-/* =========================
-   SIDEBAR
-========================= */
-
 .sidebar {
 
     border-left: 1px solid #ddd;
 
     padding-left: 25px;
 }
-
-
-/* =========================
-   FEATURED
-========================= */
 
 .featured h2,
 .contact h2 {
@@ -289,12 +211,10 @@ body {
     margin-bottom: 15px;
 }
 
-
 .featured ul {
 
     list-style: none;
 }
-
 
 .featured li {
 
@@ -311,12 +231,6 @@ body {
     transition: 0.2s;
 }
 
-
-/*
-    Hover danh sách ảnh nổi bật:
-    chữ + nền đều đổi màu
-*/
-
 .featured li:hover {
 
     color: white;
@@ -324,16 +238,10 @@ body {
     background-color: #5b9bd5;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
-
 .contact {
 
     margin-top: 30px;
 }
-
 
 .contact p {
 
@@ -343,11 +251,6 @@ body {
 
     color: #777;
 }
-
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
 
@@ -362,16 +265,6 @@ footer {
     font-size: 12px;
 }
 
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-
-/*
-    TABLET
-*/
-
 @media (max-width: 768px) {
 
     .container {
@@ -379,7 +272,6 @@ footer {
         grid-template-columns: 1fr;
 
     }
-
 
     .sidebar {
 
@@ -392,7 +284,6 @@ footer {
         padding-top: 20px;
     }
 
-
     .article img {
 
         width: 160px;
@@ -401,11 +292,6 @@ footer {
     }
 
 }
-
-
-/*
-    MOBILE
-*/
 
 @media (max-width: 600px) {
 
@@ -417,13 +303,11 @@ footer {
 
     }
 
-
     .logo {
 
         margin: auto;
 
     }
-
 
     .logo-text h1 {
 
@@ -431,15 +315,13 @@ footer {
 
     }
 
-
     .logo-text p {
 
         font-size: 10px;
 
     }
 
-
-    /* Menu chuyển thành cột */
+    
 
     .navbar {
 
@@ -451,7 +333,6 @@ footer {
 
     }
 
-
     .navbar a {
 
         width: 100%;
@@ -460,8 +341,7 @@ footer {
 
     }
 
-
-    /* Bài viết chuyển thành dọc */
+    
 
     .article {
 
@@ -471,7 +351,6 @@ footer {
 
     }
 
-
     .article img {
 
         width: 100%;
@@ -480,20 +359,17 @@ footer {
 
     }
 
-
     .article-content {
 
         padding: 5px;
 
     }
 
-
     .container {
 
         padding: 15px 10px;
 
     }
-
 
     .sidebar {
 

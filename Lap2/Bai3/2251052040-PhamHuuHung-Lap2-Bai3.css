@@ -1,13 +1,8 @@
-/* =========================
-   RESET
-========================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
 
@@ -18,22 +13,12 @@ body {
     color: #333;
 }
 
-
-/* =========================
-   HEADER
-========================= */
-
 header {
 
     width: 100%;
 
     background-color: white;
 }
-
-
-/* =========================
-   TOP HEADER
-========================= */
 
 .top-header {
 
@@ -52,9 +37,6 @@ header {
     padding: 0 20px;
 }
 
-
-/* LOGO */
-
 .logo {
 
     display: flex;
@@ -66,12 +48,10 @@ header {
     color: #2456a6;
 }
 
-
 .logo > i {
 
     font-size: 38px;
 }
-
 
 .logo strong {
 
@@ -79,7 +59,6 @@ header {
 
     font-size: 13px;
 }
-
 
 .logo small {
 
@@ -92,18 +71,12 @@ header {
     color: #777;
 }
 
-
-/* =========================
-   HEADER ICON
-========================= */
-
 .header-icons {
 
     display: flex;
 
     gap: 18px;
 }
-
 
 .icon-box {
 
@@ -127,16 +100,10 @@ header {
     background-color: #eef4ff;
 }
 
-
 .icon-box:hover {
 
     background-color: #dce9ff;
 }
-
-
-/* =========================
-   NAVBAR
-========================= */
 
 .navbar {
 
@@ -150,10 +117,7 @@ header {
 
     gap: 40px;
 
-    /*
-       Gradient 3 màu:
-       blue + lightblue + white
-    */
+    
     background: linear-gradient(
         to right,
         blue,
@@ -161,7 +125,6 @@ header {
         white
     );
 }
-
 
 .navbar a {
 
@@ -174,22 +137,10 @@ header {
     padding: 10px 15px;
 }
 
-
-/*
-    Đề yêu cầu:
-    Bình thường không gạch chân
-    Hover thì hiện gạch chân
-*/
-
 .navbar a:hover {
 
     text-decoration: underline;
 }
-
-
-/* =========================
-   POPUP
-========================= */
 
 .popup {
 
@@ -214,7 +165,6 @@ header {
     display: none;
 }
 
-
 .popup h4 {
 
     color: #2456a6;
@@ -223,7 +173,6 @@ header {
 
     font-size: 14px;
 }
-
 
 .popup p {
 
@@ -234,30 +183,15 @@ header {
     color: #555;
 }
 
-
-/*
-    Hover USER
-*/
-
 .user-box:hover .user-popup {
 
     display: block;
 }
 
-
-/*
-    Hover BELL
-*/
-
 .bell-box:hover .notification-popup {
 
     display: block;
 }
-
-
-/* =========================
-   MAIN
-========================= */
 
 .container {
 
@@ -274,11 +208,6 @@ header {
     min-height: 1000px;
 }
 
-
-/* =========================
-   INTRO
-========================= */
-
 .intro {
 
     padding: 15px;
@@ -287,7 +216,6 @@ header {
 
     border-bottom: 1px solid #ddd;
 }
-
 
 .intro h2 {
 
@@ -298,7 +226,6 @@ header {
     margin-bottom: 8px;
 }
 
-
 .intro p {
 
     color: #777;
@@ -306,16 +233,10 @@ header {
     font-size: 13px;
 }
 
-
-/* =========================
-   MEMBERS
-========================= */
-
 .members {
 
     margin-bottom: 25px;
 }
-
 
 .members > h2 {
 
@@ -326,14 +247,12 @@ header {
     margin-bottom: 12px;
 }
 
-
 .member-list {
 
     display: flex;
 
     gap: 20px;
 }
-
 
 .member {
 
@@ -352,11 +271,6 @@ header {
     border-radius: 5px;
 }
 
-
-/* =========================
-   AVATAR
-========================= */
-
 .avatar {
 
     width: 50px;
@@ -364,10 +278,7 @@ header {
 
     border-radius: 50%;
 
-    /*
-       Gradient hình tròn
-       white + blue
-    */
+    
     background: radial-gradient(
         circle,
         white,
@@ -379,7 +290,6 @@ header {
     flex-shrink: 0;
 }
 
-
 .avatar img {
 
     width: 100%;
@@ -390,11 +300,6 @@ header {
     border-radius: 50%;
 }
 
-
-/* =========================
-   MEMBER INFO
-========================= */
-
 .member-info h3 {
 
     font-size: 13px;
@@ -403,7 +308,6 @@ header {
 
     margin-bottom: 5px;
 }
-
 
 .member-info p {
 
@@ -414,7 +318,6 @@ header {
     margin-bottom: 3px;
 }
 
-
 .member-info small {
 
     font-size: 10px;
@@ -422,16 +325,10 @@ header {
     color: #999;
 }
 
-
-/* =========================
-   POSTS
-========================= */
-
 .posts {
 
     margin-top: 20px;
 }
-
 
 .section-title {
 
@@ -444,14 +341,10 @@ header {
     margin-bottom: 5px;
 }
 
-
 .section-title h2 {
 
     font-size: 14px;
 }
-
-
-/* POST */
 
 .post {
 
@@ -464,12 +357,10 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
-
 .post-content {
 
     flex: 1;
 }
-
 
 .post-content a {
 
@@ -479,23 +370,17 @@ header {
 
     font-weight: bold;
 
-    /*
-       Tất cả link bỏ gạch chân
-    */
+    
     text-decoration: none;
 }
 
-
 .post-content a:hover {
 
-    /*
-       Hover thì hiện gạch chân
-    */
+    
     text-decoration: underline;
 
     color: #2456a6;
 }
-
 
 .post-content p {
 
@@ -506,18 +391,12 @@ header {
     margin: 6px 0;
 }
 
-
 .post-content small {
 
     font-size: 9px;
 
     color: #aaa;
 }
-
-
-/* =========================
-   FIXED BANNER
-========================= */
 
 .left-banner,
 .right-banner {
@@ -551,29 +430,21 @@ header {
     font-size: 10px;
 }
 
-
 .left-banner {
 
     left: 15px;
 }
-
 
 .right-banner {
 
     right: 15px;
 }
 
-
 .left-banner p,
 .right-banner p {
 
     margin: 3px;
 }
-
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
 
@@ -590,21 +461,12 @@ footer {
     background-color: #284a96;
 }
 
-
 footer p {
 
     margin: 8px;
 
     font-size: 12px;
 }
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-
-/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -621,11 +483,6 @@ footer p {
 
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 600px) {
 
     .top-header {
@@ -639,7 +496,6 @@ footer p {
         gap: 15px;
     }
 
-
     .navbar {
 
         height: auto;
@@ -651,7 +507,6 @@ footer p {
         padding: 5px;
     }
 
-
     .navbar a {
 
         width: 100%;
@@ -660,7 +515,6 @@ footer p {
 
         padding: 8px;
     }
-
 
     .container {
 
@@ -671,18 +525,15 @@ footer p {
         margin: 10px auto;
     }
 
-
     .member-list {
 
         flex-direction: column;
     }
 
-
     .post {
 
         align-items: flex-start;
     }
-
 
     .popup {
 
@@ -695,12 +546,10 @@ footer p {
         width: 220px;
     }
 
-
     .logo {
 
         text-align: center;
     }
-
 
     .logo > i {
 
