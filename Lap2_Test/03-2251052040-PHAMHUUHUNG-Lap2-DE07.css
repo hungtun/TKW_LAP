@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #ffffff;
+    min-height: 100vh;
+    
+}
+
+.fest-banner{
+   background: linear-gradient(to right, #ff3fe5, #0044ff); ;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fest-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+    padding: 20px 0;
+}
+
+.fest-desc{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.fest-btn{
+    margin: 20px auto;
+    color: blueviolet;
+    padding: 20px;
+    font-size: larger;
+    border: 1px solid blueviolet;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    
+}
+
+.fest-btn:hover{
+    background-color: blueviolet;
+    color: white;
+    transform: scale(1.1);
+}
+
+.page-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: black;
+    margin: 20px auto;
+    width: 800px;
+
+  
+}
+
+.page-content h2 {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.page-content p {
+    align-self: flex-start;
+}
+ 
+ 
+
+
+
+ 
+  
+ 
