@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách nhân viên - DE08</title>
+    <link rel="stylesheet" href="03-2251052040-PHAMHUUHUNG-Lap3-DE08.css">
+    <style>
+        .form-row input.error {
+            border-color: #ef4444;
+        }
+
+        .form-row button:hover {
+            background: #172554;
+        }
+
+        .btn-delete:hover {
+            background: rgba(255, 255, 255, 0.45);
+        }
+
+        #empty-msg.hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Danh sách nhân viên</h1>
+
+        <div class="form-row">
+            <input type="text" id="employee-name" placeholder="Tên nhân viên">
+            <input type="text" id="employee-salary" placeholder="Lương">
+            <button type="button" id="btn-add">Thêm</button>
+        </div>
+
+        <p class="total-line">
+            Tổng lương của các nhân viên có trong danh sách:
+            <span id="total-salary">0 VNĐ</span>
+        </p>
+
+        <ul id="employee-list"></ul>
+        <p id="empty-msg">Chưa có nhân viên nào.</p>
+    </div>
+
+    <script>
+        var nameInput = document.getElementById("employee-name");
+        var salaryInput = document.getElementById("employee-salary");
+        var btnAdd = document.getElementById("btn-add");
+        var employeeList = document.getElementById("employee-list");
+        var totalSalaryEl = document.getElementById("total-salary");
+        var emptyMsg = document.getElementById("empty-msg");
+
+        var employees = [];
+
+        function formatMoney(number) {
+            number = Math.round(number);
+            var text = number + "";
+            var result = "";
+            var count = 0;
+
+            for (var i = text.length - 1; i >= 0; i--) {
+                result = text.charAt(i) + result;
+                count = count + 1;
+
+                if (count == 3 && i > 0) {
+                    result = "." + result;
+                    count = 0;
+                }
+            }
+
+            return result;
+        }
+
+        function getSalaryValue() {
+            var value = salaryInput.value;
+            value = value.split(".").join("");
+            value = value.split(",").join("");
+            return Number(value);
+        }
+
+        function blinkInput(input) {
+            var times = 0;
+
+            var timer = setInterval(function () {
+                input.classList.toggle("error");
+                times = times + 1;
+
+                if (times >= 6) {
+                    clearInterval(timer);
+                    input.classList.remove("error");
+                }
+            }, 300);
+        }
+
+        // function blinkInput(input){
+        //     var count = 0;
+        //     var interval = setInterval(()=>{
+        //         input.classList.toggle("error");
+        //         count++;
+        //         if(count > 6){
+        //             clearInterval(interval);
+        //             input.classList.remove("error");
+        //         }
+        //     },300);
+        // }
+
+        function updateTotal() {
+            var total = 0;
+
+            for (var i = 0; i < employees.length; i++) {
+                total = total + employees[i].salary;
+            }
+
+            totalSalaryEl.textContent = formatMoney(total) + " VNĐ";
+        }
+
+        function updateEmptyMessage() {
+            if (employees.length == 0) {
+                emptyMsg.classList.remove("hidden");
+            } else {
+                emptyMsg.classList.add("hidden");
+            }
+        }
+
+        function deleteEmployee(index) {
+            employees.splice(index, 1);
+            showList();
+            updateTotal();
+            updateEmptyMessage();
+        }
+
+        function showList() {
+            var html = "";
+
+            employees.forEach(function (employee, i) {
+                html += `
+            <li class="employee-item">
+                <div class="employee-info">
+                    <strong>${employee.name}</strong>
+                    <span>${formatMoney(employee.salary)}đ</span>
+                </div>
+                <button type="button" class="btn-delete" onclick="deleteEmployee(${i})">×</button>
+            </li>
+        `;
+            });
+
+            employeeList.innerHTML = html;
+        }
+
+        btnAdd.onclick = function () {
+            var name = nameInput.value.trim();
+            var salaryText = salaryInput.value.trim();
+
+            var ok = true;
+
+            if (name == "") {
+                blinkInput(nameInput);
+                ok = false;
+            }
+
+            if (salaryText == "") {
+                blinkInput(salaryInput);
+                ok = false;
+            }
+
+            if (ok == false) {
+                return;
+            }
+
+            var employee = {
+                name: name,
+                salary: getSalaryValue()
+            };
+
+            employees.push(employee);
+
+            employees.sort(function (a, b) {
+                return b.salary - a.salary;
+            });
+
+            nameInput.value = "";
+            salaryInput.value = "";
+
+            showList();
+            updateTotal();
+            updateEmptyMessage();
+        };
+
+        updateEmptyMessage();
+        updateTotal();
+    </script>
+</body>
+
+</html>

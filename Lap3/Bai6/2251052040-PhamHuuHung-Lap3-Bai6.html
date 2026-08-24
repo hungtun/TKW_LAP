@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy đổi nhiệt độ</title>
+    <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap3-Bai6.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Quy đổi nhiệt độ</h1>
+
+        <div class="form-row">
+            <label for="value">Giá trị</label>
+            <input type="number" id="value" step="0.01">
+        </div>
+
+        <div class="form-row">
+            <label for="from-unit">Từ đơn vị</label>
+            <select id="from-unit">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+                <option value="K">K</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="to-unit">Sang đơn vị</label>
+            <select id="to-unit">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+                <option value="K">K</option>
+            </select>
+        </div>
+
+        <p id="error-msg" class="error-msg"></p>
+        <p id="result" class="result"></p>
+
+        <button type="button" id="btn-convert">Đổi</button>
+    </div>
+
+    <script src="2251052040-PhamHuuHung-Lap3-Bai6.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh bạ liên hệ</title>
+    <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap3-Bai9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Danh bạ liên hệ</h1>
+
+        <h2 class="section-title">THÊM LIÊN HỆ</h2>
+        <input type="text" id="contact-name" placeholder="Tên liên hệ">
+        <div class="add-row">
+            <input type="text" id="contact-phone" placeholder="Số điện thoại">
+            <button type="button" id="btn-add">Thêm</button>
+        </div>
+
+        <h2 class="section-title">DANH BẠ CỦA BẠN</h2>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-input" placeholder="Tìm theo tên...">
+        </div>
+
+        <ul id="contact-list"></ul>
+        <p id="empty-msg" class="empty-msg">Danh bạ trống</p>
+        <p id="no-result-msg" class="no-result-msg hidden">Không tìm thấy liên hệ nào khớp.</p>
+    </div>
+
+    <script src="2251052040-PhamHuuHung-Lap3-Bai9.js"></script>
+</body>
+
+</html>

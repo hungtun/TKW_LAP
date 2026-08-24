@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8f0fe;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background: linear-gradient(180deg, #7ec8e8 0%, #2b6cb0 100%);
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.add-section input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.add-section input.error {
+    border-color: #e53935;
+}
+
+.add-row {
+    display: flex;
+    gap: 10px;
+}
+
+.add-row input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.add-row button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #1a3a6b;
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.gpa-display {
+    text-align: center;
+    margin: 24px 0 16px;
+}
+
+.gpa-display p:first-child {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.gpa-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+#subject-list {
+    list-style: none;
+}
+
+.subject-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+.subject-item:last-child {
+    border-bottom: none;
+}
+
+.btn-delete {
+    padding: 5px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #ef5350;
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.empty-msg {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.empty-msg.hidden {
+    display: none;
+}

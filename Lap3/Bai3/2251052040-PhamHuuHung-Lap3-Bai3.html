@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi suất tiết kiệm</title>
+    <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap3-Bai3.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Tính lãi suất tiết kiệm</h1>
+
+        <div class="form-row">
+            <label for="amount">Số tiền</label>
+            <input type="text" id="amount" inputmode="numeric">
+            <span class="unit">(VNĐ)</span>
+        </div>
+
+        <div class="form-row">
+            <label for="term">Kỳ hạn</label>
+            <input type="number" id="term" min="1">
+            <span class="unit">(tháng)</span>
+        </div>
+
+        <div class="form-row">
+            <label for="rate">Lãi suất</label>
+            <input type="number" id="rate" step="0.1" min="0">
+            <span class="unit">(%/năm)</span>
+        </div>
+
+        <p id="error-msg" class="error-msg"></p>
+        <p id="result" class="result"></p>
+
+        <button type="button" id="btn-calc">Tính</button>
+    </div>
+
+    <script src="2251052040-PhamHuuHung-Lap3-Bai3.js"></script>
+</body>
+
+</html>

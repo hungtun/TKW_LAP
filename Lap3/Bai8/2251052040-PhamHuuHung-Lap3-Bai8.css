@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8f0fe;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background: linear-gradient(180deg, #7ec8e8 0%, #2b6cb0 100%);
+    border-radius: 16px;
+    padding: 28px 24px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    opacity: 0.85;
+}
+
+.card > input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.card > input.error,
+.add-row input.error {
+    border-color: #e53935;
+}
+
+.add-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-row input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.add-row input:last-of-type {
+    flex: 0 0 60px;
+}
+
+.add-row button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #1a3a6b;
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#cart-list {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-info strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.cart-item-subtotal {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.btn-delete {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.empty-msg {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.empty-msg.hidden {
+    display: none;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a3a6b;
+    margin: 0 -24px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.total-price {
+    color: #ffeb3b;
+}

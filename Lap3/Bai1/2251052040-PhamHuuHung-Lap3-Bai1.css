@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8f0fe;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    background: linear-gradient(180deg, #7ec8e8 0%, #2b6cb0 100%);
+    border-radius: 16px;
+    padding: 28px 32px 32px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.form-row label {
+    width: 90px;
+    font-size: 15px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-row input.error {
+    border-color: #e53935;
+}
+
+.unit {
+    width: 40px;
+    font-size: 14px;
+}
+
+.error-msg {
+    color: #ffcdd2;
+    font-size: 14px;
+    min-height: 20px;
+    margin: 8px 0;
+}
+
+.result {
+    color: #76ff03;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 28px;
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 10px 32px;
+    border: none;
+    border-radius: 8px;
+    background: #1a3a6b;
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f2847;
+}

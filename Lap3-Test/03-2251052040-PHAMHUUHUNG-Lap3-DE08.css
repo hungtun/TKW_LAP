@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 560px;
+    background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 24px;
+    padding: 28px 24px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+    color: #fff;
+}
+
+.card h1 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-row button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #1e3a8a;
+    color: #fff;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.total-line {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.total-line span {
+    color: #fde047;
+    font-weight: bold;
+}
+
+#employee-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.employee-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    padding: 12px 14px;
+}
+
+.employee-info strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.employee-info span {
+    font-size: 13px;
+}
+
+.btn-delete {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.28);
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#empty-msg {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    padding: 18px 0 6px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng mua sắm</title>
+    <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap3-Bai8.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Giỏ hàng mua sắm</h1>
+
+        <h2 class="section-title">THÊM SẢN PHẨM</h2>
+        <input type="text" id="product-name" placeholder="Tên sản phẩm">
+        <div class="add-row">
+            <input type="text" id="product-price" placeholder="Giá (VNĐ)" inputmode="numeric">
+            <input type="number" id="product-qty" placeholder="SL" min="1" value="1">
+            <button type="button" id="btn-add">Thêm</button>
+        </div>
+
+        <h2 class="section-title">GIỎ HÀNG CỦA BẠN</h2>
+        <ul id="cart-list"></ul>
+        <p id="empty-msg" class="empty-msg">Giỏ hàng trống</p>
+
+        <div class="cart-footer">
+            <span>Tổng tiền</span>
+            <span id="total-price" class="total-price">0 VNĐ</span>
+        </div>
+    </div>
+
+    <script src="2251052040-PhamHuuHung-Lap3-Bai8.js"></script>
+</body>
+
+</html>

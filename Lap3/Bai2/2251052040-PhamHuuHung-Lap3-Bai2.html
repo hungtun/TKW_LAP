@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi đơn vị tiền tệ</title>
+    <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap3-Bai2.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Chuyển đổi đơn vị tiền tệ</h1>
+
+        <div class="form-row">
+            <label for="amount">Số tiền</label>
+            <input type="text" id="amount" inputmode="numeric">
+            <span class="unit">(VNĐ)</span>
+        </div>
+
+        <div class="form-row">
+            <label for="currency">Đơn vị đổi</label>
+            <select id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+            </select>
+        </div>
+
+        <p id="error-msg" class="error-msg"></p>
+        <p id="result" class="result"></p>
+
+        <button type="button" id="btn-convert">Đổi</button>
+    </div>
+
+    <script src="2251052040-PhamHuuHung-Lap3-Bai2.js"></script>
+</body>
+
+</html>
