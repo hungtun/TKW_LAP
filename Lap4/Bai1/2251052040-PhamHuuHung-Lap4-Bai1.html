@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa học trực tuyến</title>
+    <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap4-Bai1.css">
+</head>
+
+<body>
+    <header>
+        <h1>KHÓA HỌC TRỰC TUYẾN</h1>
+    </header>
+
+    <main class="course-grid" id="course-grid">
+        <div class="course-card">
+            <div class="course-title" style="background:#00A652">
+                <span>LẬP TRÌNH C++ CĂN BẢN</span>
+            </div>
+            <img src="images/cpp.jpg" alt="C++">
+            <a href="#" class="btn-delete" onclick="deleteCourse(this); return false;">×</a>
+        </div>
+
+        <div class="course-card">
+            <div class="course-title" style="background:#ED1B24">
+                <span>LẬP TRÌNH JAVA CĂN BẢN</span>
+            </div>
+            <img src="images/java.jpg" alt="Java">
+            <a href="#" class="btn-delete" onclick="deleteCourse(this); return false;">×</a>
+        </div>
+
+        <div class="course-card">
+            <div class="course-title" style="background:#1D55A0">
+                <span>LẬP TRÌNH PYTHON CĂN BẢN</span>
+            </div>
+            <img src="images/python.jpg" alt="Python">
+            <a href="#" class="btn-delete" onclick="deleteCourse(this); return false;">×</a>
+        </div>
+
+        <div class="course-card">
+            <div class="course-title" style="background:#FF9F00">
+                <span>NHẬP MÔN CƠ SỞ DỮ LIỆU</span>
+            </div>
+            <img src="images/database.jpg" alt="Database">
+            <a href="#" class="btn-delete" onclick="deleteCourse(this); return false;">×</a>
+        </div>
+
+        <div class="course-card">
+            <div class="course-title" style="background:#993300">
+                <span>KỸ THUẬT LẬP TRÌNH</span>
+            </div>
+            <img src="images/recursion.jpg" alt="Recursion">
+            <a href="#" class="btn-delete" onclick="deleteCourse(this); return false;">×</a>
+        </div>
+
+        <div class="course-card">
+            <div class="course-title" style="background:#663399">
+                <span>SỬ DỤNG GIT/GITHUB</span>
+            </div>
+            <img src="images/git.jpg" alt="Git">
+            <a href="#" class="btn-delete" onclick="deleteCourse(this); return false;">×</a>
+        </div>
+
+        <div class="add-card" id="add-card" onclick="addCourse()">
+            <div class="plus-icon">+</div>
+        </div>
+    </main>
+
+    <script src="2251052040-PhamHuuHung-Lap4-Bai1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist của tôi</title>
+    <link rel="stylesheet" href="2251052040-PhamHuuHung-Lap4-Bai6.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>🎵 Playlist của tôi</h1>
+
+        <div id="song-list">
+            <div class="song">
+                <div class="disc" style="background:#1D55A0" onclick="togglePlay(this)">🎧</div>
+                <div class="song-info">
+                    <strong>Hạ còn vương nắng</strong>
+                    <p class="status">Nhấn vào đĩa để phát</p>
+                </div>
+                <button type="button" class="btn-delete" onclick="deleteSong(this)">×</button>
+            </div>
+
+            <div class="song">
+                <div class="disc" style="background:#ED1B24" onclick="togglePlay(this)">🎧</div>
+                <div class="song-info">
+                    <strong>See Tình</strong>
+                    <p class="status">Nhấn vào đĩa để phát</p>
+                </div>
+                <button type="button" class="btn-delete" onclick="deleteSong(this)">×</button>
+            </div>
+        </div>
+
+        <button type="button" class="btn-add" onclick="addSong()">+ Thêm bài hát</button>
+    </div>
+
+    <script src="2251052040-PhamHuuHung-Lap4-Bai6.js"></script>
+</body>
+
+</html>

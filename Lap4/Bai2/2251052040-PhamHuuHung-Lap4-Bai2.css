@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.app {
+    width: 520px;
+    border: 8px solid #1D55A0;
+}
+
+.top-bar {
+    background: #1D55A0;
+    padding: 10px 12px;
+}
+
+.top-bar button {
+    margin-right: 8px;
+    padding: 6px 16px;
+    background: #fff;
+    color: #1D55A0;
+    border: none;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.field {
+    height: 360px;
+    background: #9e9e9e;
+    position: relative;
+    overflow: hidden;
+}
+
+#ball {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 230px;
+    top: 280px;
+}
+
+.footer {
+    background: #1D55A0;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+#footer-text {
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    top: 10px;
+    animation: footerMove 8s linear infinite;
+}
+
+.footer:hover #footer-text {
+    animation-play-state: paused;
+}
+
+@keyframes footerMove {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}

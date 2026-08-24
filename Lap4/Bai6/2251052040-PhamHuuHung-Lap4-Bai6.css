@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #111;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.app {
+    width: 100%;
+    max-width: 480px;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.song {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.disc {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.disc.playing {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-info strong {
+    color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.status {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.btn-delete {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-delete:hover {
+    background: #ef4444;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 2px dashed #666;
+    color: #ddd;
+    border-radius: 10px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}

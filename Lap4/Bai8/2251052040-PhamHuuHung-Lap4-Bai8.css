@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #0b1220;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    background: #152238;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.label {
+    color: #93c5fd;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.time {
+    color: #fff;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.time.warning {
+    color: #ef4444;
+}
+
+.status {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.actions button {
+    border: none;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start { background: #22c55e; }
+.pause { background: #f59e0b; }
+.reset { background: #ef4444; }
+
+.start:disabled {
+    background: #3f5d4a;
+    cursor: not-allowed;
+}
