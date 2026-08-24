@@ -1,5 +1,5 @@
 var pos = 0;
-var maxPos = 3;
+var maxPos = 2;
 var timer;
 var track = document.getElementById("track");
 var dots = document.getElementsByClassName("dot");
@@ -10,7 +10,7 @@ function getStep() {
 }
 
 function updateCarousel() {
-    var px = pos * getStep();
+    var px = pos * getStep() * 3;
     track.style.transform = "translateX(-" + px + "px)";
 
     for (var i = 0; i < dots.length; i++) {

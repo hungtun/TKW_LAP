@@ -1,10 +1,10 @@
 var colors = ["#1D55A0", "#ED1B24", "#FF9F00", "#00A652", "#993300", "#663399"];
 var images = [
-    "images/category1.jpg",
-    "images/category2.jpg",
-    "images/category3.jpg",
-    "images/category4.jpg",
-    "images/category5.jpg"
+    "../images/cpp.png",
+    "../images/java.jpg",
+    "../images/python.png",
+    "../images/database.png",
+    "../images/recursion.png"
 ];
 
 function addCourse() {
