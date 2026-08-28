@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Progress - DE06</title>
+    <link rel="stylesheet" href="03-2251052040-PHAMHUUHUNG-Lap4-DE06.css">
+    <style>
+        .progress-bar {
+            width: 0%;
+            transition: width 0.08s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="upload-card">
+        <div class="file-name">
+            <span class="file-icon">📄</span>
+            <span>bao-cao-thang-4.pdf</span>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <p class="status-text" id="status-text">Chưa tải lên</p>
+
+        <div class="button-row">
+            <button type="button" id="btn-start">Bắt đầu tải lên</button>
+            <button type="button" id="btn-cancel">Hủy</button>
+        </div>
+    </div>
+
+    <script>
+        var percent = 0;
+        var timer = null;
+
+        var progressBar = document.getElementById("progress-bar");
+        var statusText = document.getElementById("status-text");
+        var btnStart = document.getElementById("btn-start");
+        var btnCancel = document.getElementById("btn-cancel");
+
+        function showProgress() {
+            progressBar.style.width = percent + "%";
+            statusText.textContent = percent + "%";
+        }
+
+        btnStart.onclick = function () {
+            clearInterval(timer);
+            timer = null;
+
+            percent = 0;
+            showProgress();
+
+            timer = setInterval(function () {
+                percent = percent + 7;
+
+                if (percent >= 100) {
+                    percent = 100;
+                    progressBar.style.width = "100%";
+                    statusText.textContent = "Đã tải lên xong!";
+                    clearInterval(timer);
+                    timer = null;
+                    return;
+                }
+
+                showProgress();
+            }, 80);
+        };
+
+        btnCancel.onclick = function () {
+            if (timer != null) {
+                clearInterval(timer);
+                timer = null; 
+                statusText.textContent = "Đã hủy tải lên";
+            }
+        };
+    </script>
+</body>
+
+</html>
