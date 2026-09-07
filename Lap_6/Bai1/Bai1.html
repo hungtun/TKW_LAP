@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Product Card</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="w-80 bg-white rounded-xl shadow-lg p-5
+                hover:shadow-2xl transition duration-300">
+
+        <!-- Hình sản phẩm -->
+        <div class="bg-gray-100 rounded-lg overflow-hidden mb-4">
+            <img
+                src="/Lap_6/Images/iphone-15-xanh-thumb-600x600.jpg"
+                alt="iPhone 15"
+                class="w-full h-44 object-cover"
+            >
+        </div>
+
+        <!-- Tên sản phẩm -->
+        <h2 class="text-xl font-bold text-gray-800">
+            iPhone 15
+        </h2>
+
+        <!-- Mô tả -->
+        <p class="text-gray-500 mt-2 mb-5">
+            Mô tả: Apple CPU 6 nhân
+        </p>
+
+        <!-- Button -->
+        <button
+            class="w-full bg-blue-600 text-white py-3 rounded-lg
+                   font-semibold
+                   hover:bg-green-500
+                   transition duration-300">
+            Mua ngay
+        </button>
+
+    </div>
+
+</body>
+</html>

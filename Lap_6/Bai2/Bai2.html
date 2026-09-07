@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 - Responsive Navbar</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white">
+
+        <div class="max-w-6xl mx-auto px-4">
+
+            <div class="flex justify-between items-center h-14">
+
+                <!-- Logo -->
+                <div class="font-bold text-lg">
+                    My Website
+                </div>
+
+                <!-- Desktop menu -->
+                <div class="hidden md:flex items-center gap-6">
+
+                    <a href="#"
+                       class="hover:text-yellow-300 transition">
+                        Trang chủ
+                    </a>
+
+                    <a href="#"
+                       class="hover:text-yellow-300 transition">
+                        Sản phẩm
+                    </a>
+
+                    <a href="#"
+                       class="hover:text-yellow-300 transition">
+                        Dịch vụ
+                    </a>
+
+                    <a href="#"
+                       class="hover:text-yellow-300 transition">
+                        Liên hệ
+                    </a>
+
+                </div>
+
+                <!-- Hamburger -->
+                <button
+                    id="menuBtn"
+                    class="md:hidden text-2xl">
+                    ☰
+                </button>
+
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobileMenu"
+                 class="hidden md:hidden pb-4">
+
+                <a href="#"
+                   class="block py-2 hover:text-yellow-300">
+                    Trang chủ
+                </a>
+
+                <a href="#"
+                   class="block py-2 hover:text-yellow-300">
+                    Sản phẩm
+                </a>
+
+                <a href="#"
+                   class="block py-2 hover:text-yellow-300">
+                    Dịch vụ
+                </a>
+
+                <a href="#"
+                   class="block py-2 hover:text-yellow-300">
+                    Liên hệ
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Nội dung -->
+    <main class="max-w-6xl mx-auto p-6">
+        <div class="bg-white p-6 rounded-lg">
+            Nội dung trang nằm ở đây.
+        </div>
+    </main>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bài 4 - User Table</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-5">
+
+    <div class="max-w-5xl mx-auto">
+
+        <h1 class="text-2xl font-bold text-gray-800 mb-5">
+            Danh sách người dùng
+        </h1>
+
+        <div class="bg-white rounded-lg shadow overflow-x-auto">
+
+            <table class="w-full text-left">
+
+                <thead class="bg-gray-200">
+                    <tr>
+                        <th class="px-4 py-3">ID</th>
+                        <th class="px-4 py-3">Họ Tên</th>
+                        <th class="px-4 py-3">Email</th>
+                        <th class="px-4 py-3">Trạng thái</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="border-b">
+                        <td class="px-4 py-3">1</td>
+
+                        <td class="px-4 py-3">
+                            Nguyễn Văn A
+                        </td>
+
+                        <td class="px-4 py-3">
+                            email1@example.com
+                        </td>
+
+                        <td class="px-4 py-3
+                                   bg-green-100 text-green-700">
+                            Active
+                        </td>
+                    </tr>
+
+                    <tr class="border-b">
+                        <td class="px-4 py-3">2</td>
+
+                        <td class="px-4 py-3">
+                            Trần Thị B
+                        </td>
+
+                        <td class="px-4 py-3">
+                            email2@example.com
+                        </td>
+
+                        <td class="px-4 py-3
+                                   bg-red-100 text-red-600">
+                            Inactive
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="px-4 py-3">3</td>
+
+                        <td class="px-4 py-3">
+                            Lê Văn C
+                        </td>
+
+                        <td class="px-4 py-3">
+                            email3@example.com
+                        </td>
+
+                        <td class="px-4 py-3
+                                   bg-green-100 text-green-700">
+                            Active
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

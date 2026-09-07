@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bài 8 - Accordion</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white p-8">
+
+    <div class="max-w-2xl mx-auto">
+
+        <!-- Câu hỏi 1 -->
+        <div class="border-b">
+
+            <button
+                class="accordion-btn w-full
+                       flex justify-between items-center
+                       py-4 text-left
+                       font-semibold
+                       hover:text-blue-600">
+
+                <span>🔷 Câu hỏi 1</span>
+
+                <span class="arrow transition">
+                    ▼
+                </span>
+
+            </button>
+
+            <div class="accordion-content
+                        hidden pb-4 text-gray-600">
+
+                Đây là nội dung của câu hỏi 1.
+
+            </div>
+
+        </div>
+
+
+        <!-- Câu hỏi 2 -->
+        <div class="border-b">
+
+            <button
+                class="accordion-btn w-full
+                       flex justify-between items-center
+                       py-4 text-left
+                       font-semibold
+                       hover:text-blue-600">
+
+                <span>🔷 Câu hỏi 2</span>
+
+                <span class="arrow transition">
+                    ▼
+                </span>
+
+            </button>
+
+            <div class="accordion-content
+                        hidden pb-4 text-gray-600">
+
+                Đây là nội dung của câu hỏi 2.
+
+            </div>
+
+        </div>
+
+
+        <!-- Câu hỏi 3 -->
+        <div class="border-b">
+
+            <button
+                class="accordion-btn w-full
+                       flex justify-between items-center
+                       py-4 text-left
+                       font-semibold
+                       hover:text-blue-600">
+
+                <span>🔷 Câu hỏi 3</span>
+
+                <span class="arrow transition">
+                    ▼
+                </span>
+
+            </button>
+
+            <div class="accordion-content
+                        hidden pb-4 text-gray-600">
+
+                Đây là nội dung của câu hỏi 3.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const buttons =
+            document.querySelectorAll(".accordion-btn");
+
+        buttons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const content =
+                    button.nextElementSibling;
+
+                const arrow =
+                    button.querySelector(".arrow");
+
+                content.classList.toggle("hidden");
+
+                arrow.classList.toggle("rotate-180");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
+
